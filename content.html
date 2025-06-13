@@ -10,6 +10,23 @@
         body {
             font-family: 'Tajawal', sans-serif;
         }
+
+        @media (max-width: 640px) {
+            header .container {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            header nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            header nav a {
+                display: block;
+            }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -17,10 +34,10 @@
 <body class="bg-gray-100 text-gray-800">
 
     <!-- رأس الصفحة -->
-    <header class="bg-white shadow">
+    <header class="bg-white shadow fixed w-full top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-blue-700">الروابي لخدمات النقل</h1>
-            <nav class="space-x-4 space-x-reverse">
+           <nav class="flex flex-row space-x-4 space-x-reverse mx-auto items-center justify-between">
                 <a href="index.html" class="text-gray-700 hover:text-blue-600">الرئيسية</a>
                 <a href="services.html" class="text-gray-700 hover:text-blue-600">الخدمات</a>
                 <a href="trips.html" class="text-gray-700 hover:text-blue-600">الرحلات</a>
