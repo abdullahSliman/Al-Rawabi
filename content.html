@@ -26,6 +26,20 @@
             header nav a {
                 display: block;
             }
+            .scroll-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .scroll-btn:hover {
+      background-color: #0056b3;
+    }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
@@ -41,7 +55,7 @@
                 <a href="index.html" class="text-gray-700 hover:text-blue-600">الرئيسية</a>
                 <a href="services.html" class="text-gray-700 hover:text-blue-600">الخدمات</a>
                 <a href="trips.html" class="text-gray-700 hover:text-blue-600">الرحلات</a>
-                <a href="contact.html" class="text-blue-700 font-bold">اتصل بنا</a>
+                <a href="#" class id="scroll-btn">اتصل بنا</a>
             </nav>
         </div>
     </header>
@@ -53,7 +67,7 @@
             </p>
             <div class="flex flex-col md:flex-row gap-6 justify-center mt-8">
                 <!-- زر واتساب -->
-                <a href="https://wa.me/962790540941" target="_blank"
+                <a href="https://wa.me/962793334095" target="_blank"
                     class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg text-lg transition shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-white" viewBox="0 0 24 24">
                         <path
@@ -62,7 +76,7 @@
                     واتساب مباشر
                 </a>
                 <!-- زر الاتصال -->
-                <a href="tel:00962790540941"
+                <a href="tel:00962793334095"
                     class="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg transition shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-white" viewBox="0 0 24 24">
                         <path
@@ -73,6 +87,10 @@
             </div>
         </div>
     </main>
+     <section id="services">
+        <h2></h2>
+        <!-- محتوى القسم -->
+      </section>
     <!-- ✅ التذييل -->
     <footer class="bg-blue-700 text-white py-6">
         <div class="container mx-auto px-4 text-center">
@@ -92,7 +110,7 @@
                         class="w-6 h-6 hover:scale-110 transition-transform duration-200">
                 </a>
             </div>
-            <a href="https://wa.me/962790540941" target="_blank"
+            <a href="https://wa.me/962793334095" target="_blank"
                 class="fixed bottom-5 left-5 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 space-x-reverse">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-white" viewBox="0 0 24 24">
                     <path
